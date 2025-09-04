@@ -4,3 +4,12 @@
     display: flex;
     font-family: sans-serif;
 }
+
+#info {
+    font-family: sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
