@@ -6,14 +6,64 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="application-name" content="MrRobot Studios">
+        <style>
+            html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #000;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maintenance-container {
+  text-align: center;
+  max-width: 400px;
+  padding: 2rem;
+}
+.animation-wrapper {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1rem;
+}
+h1 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+p {
+  color: #ccc;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.status {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+        </style>
     </head>
     <body>
-        <p id="workingonittext">We're working on it. Check back later!</p>
-        <p id="info">In the meantime, why not look at our other links available, including website development plans!</p>
-        <ul>
-            <li>
-                <a href="https://docs.google.com/document/d/1-xNmScNNxfNW9EWhKJGnv6Ga4qQPwnu6CawYjAFsCPg/edit?usp=drive_link">Development Roadmap</a>
-            </li>
-        </ul>
+        <div class="maintenance-container">
+            <div class="animation-wrapper">
+            <div id="lottie"></div>
+        </div>
+        <h1>We'll be right back!</h1>
+        <p>Our website is currently undergoing scheduled maintenance. We'll be back shortly with some exciting new updates!</p>
+        <div class="status">We will announce when our website is back online!</div>
+        </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json' // maintenance animation
+    });
+  </script>
     </body>
 </html>
